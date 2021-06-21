@@ -4,9 +4,18 @@ provider "intersight" {
   endpoint = "https://intersight.com"
 }
 
+terraform {
+  required_providers {
+    intersight = {
+      source = "ciscodevnet/intersight"
+      version = "1.0.10"
+    }
+  }
+}
 
-module "terraform-intersight-iks" {
-  source = "terraform-cisco-modules/iks/intersight"
+
+
+  source = "../../terraform-intersight-iks"
   # source = "terraform-cisco-modules/iks/intersight//"
   # Infra Config Policy Information
 
