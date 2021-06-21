@@ -26,7 +26,7 @@ variable "ssh_key" {
 
 variable "vc_password" {
   type = string
-  description = "The password for your vCenter"
+  description = "Password of the account to be used with vCenter. This should be the password for the account used to register vCenter with Intersight."
 }
 
 variable "cluster_name" {
@@ -44,11 +44,6 @@ variable "portgroup" {
   description = "Portgroup"
 }
 
-variable "datastore" {
-  type = string
-  description = "VMware Datastore"
-}
-
 variable "vc_cluster" {
   type = string
   description = "VMware Cluster"
@@ -64,7 +59,3 @@ variable "vc_resource_pool" {
   description = "vc_resource_pool"
 }
 
-variable "vc_password" {
-  type = string
-  description = "Password of the account to be used with vCenter. This should be the password for the account used to register vCenter with Intersight."
-}
