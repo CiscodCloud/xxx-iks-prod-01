@@ -6,11 +6,11 @@ module "iks" {
   cluster_name        = var.cluster_name
   cluster_action      = "Deploy"
   vc_target_name      = var.vc_target_name
-  vc_portgroup        = var.portgroup
+  vc_password         = var.vc_password
   vc_datastore        = var.datastore
   vc_cluster          = var.vc_cluster
   vc_resource_pool    = var.vc_resource_pool
-  vc_password         = var.vc_password
+  vc_portgroup        = var.portgroup
 
   # IP Pool Information
   ip_starting_address = "100.64.2.150"
