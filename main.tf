@@ -72,5 +72,5 @@ terraform {
   load_balancers = 2
   # Organization and Tag
   organization = var.organization
-  tags         = var.tags
+  #tags         = var.tags
 }
