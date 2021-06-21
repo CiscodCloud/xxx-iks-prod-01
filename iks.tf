@@ -16,8 +16,8 @@ module "iks" {
   ip_pool_size        = "20"
   ip_netmask          = "255.255.255.0"
   ip_gateway          = "10.139.120.1"
-  ntp_servers         = ["198.19.255.137"]
-  dns_servers         = ["198.19.254.82"]
+  ntp_servers         = "198.19.255.137
+  dns_servers         = "198.19.254.82"
 
   addons_list = [{
     addon_policy_name = "dashboard"
