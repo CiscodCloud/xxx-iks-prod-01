@@ -3,26 +3,26 @@ module "iks" {
   version             = "0.9.20"
 
   # Infra Config Policy Information
-  cluster_name        = "cluster-a1"
-  cluster_action      = "Delete"
-  vc_target_name      = "gffa-vcenter.galaxy.cisco.com"
-  vc_portgroup        = ["DV_VLAN1056"]
-  vc_datastore        = "CCPdatastore"
-  vc_cluster          = "GFFA-HX2-Cluster"
-  vc_resource_pool    = "tenant-a"
+  cluster_name        = var.cluster_name
+  cluster_action      = "Deploy"
+  vc_target_name      = var.vc_target_name
+  vc_portgroup        = var.portgroup
+  vc_datastore        = var.datastore
+  vc_cluster          = var.vc_cluster
+  vc_resource_pool    = var.vc_resource_pool
   vc_password         = var.vc_password
 
   # IP Pool Information
-  ip_starting_address = "10.100.56.140"
+  ip_starting_address = "100.64.2.150"
   ip_pool_size        = "20"
   ip_netmask          = "255.255.255.0"
-  ip_gateway          = "10.100.56.1"
-  ip_primary_dns      = "10.2.1.172"
-  ip_secondary_dns    = "10.2.1.172"
+  ip_gateway          = "100.64.2.1"
+  ip_primary_dns      = "198.19.254.82"
+  ip_secondary_dns    = "198.19.255.137"
 
   # Network Configuration Settings
-  domain_name         = "galaxy.cisco.com"
-  timezone            = "America/New_York"
+  domain_name         = "dcv.svpod"
+  timezone            = "Etc/UTC"
 
   # Cluster information
   ssh_user            = "iksadmin"
