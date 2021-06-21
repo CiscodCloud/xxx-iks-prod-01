@@ -39,10 +39,6 @@ variable "vc_target_name" {
   description = "Target vCenter"
 }
 
-variable "portgroup" {
-  type = string
-  description = "Portgroup"
-}
 
 variable "vc_cluster" {
   type = string
@@ -58,4 +54,3 @@ variable "vc_resource_pool" {
   type = string
   description = "vc_resource_pool"
 }
-
