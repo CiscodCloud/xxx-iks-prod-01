@@ -19,21 +19,21 @@ module "iks" {
   ntp_servers         = "198.19.255.137
   dns_servers         = "198.19.254.82"
 
-  addons_list = [{
-    addon_policy_name = "dashboard"
-    addon             = "kubernetes-dashboard"
-    description       = "K8s Dashboard Policy"
-    upgrade_strategy  = "AlwaysReinstall"
-    install_strategy  = "InstallOnly"
-    },
-    {
-      addon_policy_name = "monitor"
-      addon             = "ccp-monitor"
-      description       = "Grafana Policy"
-      upgrade_strategy  = "AlwaysReinstall"
-      install_strategy  = "InstallOnly"
-    }
-  ]
+#  addons_list = [{
+#    addon_policy_name = "dashboard"
+#    addon             = "kubernetes-dashboard"
+#    description       = "K8s Dashboard Policy"
+#    upgrade_strategy  = "AlwaysReinstall"
+#    install_strategy  = "InstallOnly"
+#    },
+#    {
+#      addon_policy_name = "monitor"
+#      addon             = "ccp-monitor"
+#      description       = "Grafana Policy"
+#      upgrade_strategy  = "AlwaysReinstall"
+#      install_strategy  = "InstallOnly"
+#    }
+#  ]
   # Network Configuration Settings
   # pod_cidr = "100.65.0.0/16"
   # service_cidr = "100.64.0.0/24"
@@ -53,6 +53,7 @@ module "iks" {
   worker_count   = 3
   master_count   = 1
   #load_balancers = 2
+
   # Organization and Tag
   organization = var.organization
 
