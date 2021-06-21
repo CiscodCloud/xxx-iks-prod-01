@@ -24,6 +24,10 @@ module "iks" {
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
 
+  # Network Configuration Settings
+  pod_cidr = "100.64.3.0/24"
+  service_cidr = "100.64.4.0/24"
+
   # Cluster information
   ssh_user            = "iksadmin"
   ssh_key             = var.ssh_key
