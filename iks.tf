@@ -22,7 +22,7 @@ module "iks" {
 
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
-  timezone            = "Etc/UTC"
+  timezone            = "Etc/GMT"
 
   # Cluster information
   ssh_user            = "iksadmin"
