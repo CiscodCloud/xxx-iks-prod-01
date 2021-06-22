@@ -23,6 +23,7 @@ module "iks" {
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
+  ntp_servers         = "198.19.255.137"
   
   # Network Configuration Settings
   pod_cidr = "100.64.3.0/24"
