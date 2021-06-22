@@ -38,13 +38,8 @@ module "iks" {
   # Organization
   organization        = var.organization
   
-}
-
   
-module "addons" {
-
-  source = "terraform-cisco-modules/iks/intersight//modules/addon_policy"
-  addons = [{
+  addons_list = [{
     addon_policy_name = "dashboard"
     addon             = "kubernetes-dashboard"
     description       = "K8s Dashboard Policy"
@@ -59,7 +54,6 @@ module "addons" {
       install_strategy  = "InstallOnly"
     }
   ]
-
-  org_name = var.organization
-
 }
+
+  
