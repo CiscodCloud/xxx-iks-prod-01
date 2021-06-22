@@ -1,6 +1,6 @@
 module "iks" {
   source              = "terraform-cisco-modules/iks/intersight"
-  version             = "0.9.20"
+  version             = "1.0.0"
 
   # Infra Config Policy Information
   cluster_name        = var.cluster_name
