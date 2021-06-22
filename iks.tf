@@ -24,6 +24,21 @@ module "iks" {
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
 
+  addons_list = [{
+    addon_policy_name = "dashboard"
+    addon             = "kubernetes-dashboard"
+    description       = "K8s Dashboard Policy"
+    upgrade_strategy  = "AlwaysReinstall"
+    install_strategy  = "InstallOnly"
+    },
+    {
+      addon_policy_name = "monitor"
+      addon             = "ccp-monitor"
+      description       = "Grafana Policy"
+      upgrade_strategy  = "AlwaysReinstall"
+      install_strategy  = "InstallOnly"
+    }
+  ]
   # Network Configuration Settings
   pod_cidr = "100.64.3.0/24"
   service_cidr = "100.64.4.0/24"
