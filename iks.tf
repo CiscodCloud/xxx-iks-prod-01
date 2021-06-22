@@ -19,12 +19,13 @@ module "iks" {
   ip_gateway          = "100.64.2.1"
   ip_primary_dns      = "198.19.254.82"
   ip_secondary_dns    = "198.19.255.137"
+  ntp_servers         = ["198.19.255.137"]
+  dns_servers         = ["198.19.254.82,198.19.255.137"]
+  
   
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
-  ntp_servers         = "198.19.255.137"
-
   
   # Network Configuration Settings
   pod_cidr = "100.64.3.0/24"
