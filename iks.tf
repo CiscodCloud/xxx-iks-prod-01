@@ -19,22 +19,6 @@ module "iks" {
   ip_gateway          = "100.64.2.1"
   ip_primary_dns      = "198.19.254.82"
   ip_secondary_dns    = "198.19.255.137"
-
-  addons_list = [{
-    addon_policy_name = "dashboard"
-    addon             = "kubernetes-dashboard"
-    description       = "K8s Dashboard Policy"
-    upgrade_strategy  = "AlwaysReinstall"
-    install_strategy  = "InstallOnly"
-    },
-    {
-      addon_policy_name = "monitor"
-      addon             = "ccp-monitor"
-      description       = "Grafana Policy"
-      upgrade_strategy  = "AlwaysReinstall"
-      install_strategy  = "InstallOnly"
-    }
-  ]
   
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
