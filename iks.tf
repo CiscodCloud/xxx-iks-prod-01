@@ -20,10 +20,6 @@ module "iks" {
   ip_primary_dns      = "198.19.254.82"
   ip_secondary_dns    = "198.19.255.137"
 
-  # Network Configuration Settings
-  domain_name         = "dcv.svpod"
-  timezone            = "Etc/GMT"
-
   addons_list = [{
     addon_policy_name = "dashboard"
     addon             = "kubernetes-dashboard"
@@ -39,6 +35,11 @@ module "iks" {
       install_strategy  = "InstallOnly"
     }
   ]
+  
+  # Network Configuration Settings
+  domain_name         = "dcv.svpod"
+  timezone            = "Etc/GMT"
+  
   # Network Configuration Settings
   pod_cidr = "100.64.3.0/24"
   service_cidr = "100.64.4.0/24"
