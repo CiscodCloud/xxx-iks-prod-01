@@ -60,5 +60,5 @@ module "addons" {
   ]
 
   org_name = var.organization
-  tags     = var.tags
+
 }
