@@ -1,9 +1,9 @@
 module "iks" {
   source              = "terraform-cisco-modules/iks/intersight"
-  version             = "1.0.0"
+  version             = "1.0.11"
 
   # Infra Config Policy Information
-  #cluster_action      = "Deploy"
+  cluster_action      = "Deploy"
   wait_for_completion  = "true"
   cluster_name        = var.cluster_name
   vc_target_name      = var.vc_target_name
