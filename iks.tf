@@ -3,6 +3,7 @@ module "iks" {
   version             = "1.0.0"
 
   # Infra Config Policy Information
+  cluster_action   = "Deploy"
   cluster_name        = var.cluster_name
   cluster_action      = "undeploy"
   vc_target_name      = var.vc_target_name
