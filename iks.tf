@@ -11,7 +11,7 @@ module "iks" {
   vc_cluster          = var.vc_cluster
   vc_resource_pool    = var.vc_resource_pool
   vc_portgroup        = ["sandpit|ist|demo"]
-  #vc_portgroup        = ["production|iks|nodes"]
+  #vc_portgroup        = ["production|ist|nodes"]
 
   # IP Pool Information
   ip_starting_address = "100.64.2.150"
