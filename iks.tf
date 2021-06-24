@@ -19,7 +19,7 @@ module "iks" {
   ip_netmask          = "255.255.255.0"
   ip_gateway          = "100.64.2.1"
   ntp_servers         = ["198.19.255.137"]
-  dns_servers         = ["198.19.254.82,198.19.255.137"]
+  dns_servers         = ["198.19.254.82"]
   
   
   # Network Configuration Settings
