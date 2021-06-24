@@ -10,7 +10,7 @@ module "iks" {
   vc_datastore        = var.datastore
   vc_cluster          = var.vc_cluster
   vc_resource_pool    = var.vc_resource_pool
-  vc_portgroup        = ["sandpit|ist|demo"]
+  vc_portgroup        = ["sandpit|IST|demo"]
   #vc_portgroup        = ["production|ist|nodes"]
 
   # IP Pool Information
