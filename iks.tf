@@ -4,6 +4,7 @@ module "iks" {
 
   # Infra Config Policy Information
   #cluster_action      = "Deploy"
+  wait_for_completion  = "true"
   cluster_name        = var.cluster_name
   vc_target_name      = var.vc_target_name
   vc_password         = var.vc_password
