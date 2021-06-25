@@ -17,16 +17,13 @@ module "iks" {
   ip_pool_size        = "20"
   ip_netmask          = "255.255.255.0"
   ip_gateway          = "100.64.2.1"
-<<<<<<< HEAD
   ip_primary_dns      = "198.19.254.82"
   ip_secondary_dns    = "198.19.255.137"
 
-=======
   ntp_servers         = ["198.19.255.137"]
-  dns_servers         = ["198.19.254.82,198.19.255.137"]
+
   
-  
->>>>>>> parent of a22813c... Update iks.tf
+
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
