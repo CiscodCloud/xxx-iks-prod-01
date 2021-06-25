@@ -27,13 +27,13 @@ module "iks" {
   timezone            = "Etc/GMT"
 
   # Network Configuration Settings
-  pod_cidr = "100.64.3.0/24"
-  service_cidr = "100.64.4.0/24"
+  pod_cidr = "100.64.8.0/22"
+  service_cidr = "100.64.12.0/22"
 
   # Cluster information
   ssh_user            = "iksadmin"
   ssh_key             = var.ssh_key
-  worker_size         = "small"
+  worker_size         = "medium"
   worker_count        = 3
   master_count        = 1
   # Organization
