@@ -32,7 +32,7 @@ module "iks" {
   ssh_user            = "iksadmin"
   ssh_key             = var.ssh_key
   worker_size         = "small"
-  worker_count        = 5
+  worker_count        = 3
   master_count        = 1
   # Organization
   organization        = var.organization
