@@ -20,8 +20,6 @@ module "iks" {
   ntp_servers         = ["198.19.255.137"]
   dns_servers         = ["198.19.254.82"]
 
-  
-
   # Network Configuration Settings
   domain_name         = "dcv.svpod"
   timezone            = "Etc/GMT"
@@ -34,7 +32,7 @@ module "iks" {
   ssh_user            = "iksadmin"
   ssh_key             = var.ssh_key
   worker_size         = "medium"
-  worker_count        = 3
+  worker_count        = 4
   master_count        = 1
   # Organization
   organization        = var.organization
