@@ -50,7 +50,4 @@ variable "datastore" {
   description = "VMware Datastore"
 }
 
-variable "vc_resource_pool" {
-  type = string
-  description = "vc_resource_pool"
-}
+
