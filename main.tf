@@ -50,11 +50,12 @@ module "terraform-intersight-iks" {
   # Network Configuration Settings
   pod_cidr = "100.64.8.0/22"
   service_cidr = "100.64.12.0/22"
+  cni = "Calico"
 
   # Cluster information
   ssh_user            = "iksadmin"
   ssh_key             = var.ssh_key
-  worker_size         = "medium"
+  worker_size         = "small"
   worker_count        = 4
   master_count        = 1
   load_balancers      = 3
