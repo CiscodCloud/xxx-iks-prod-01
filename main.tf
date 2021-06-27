@@ -5,7 +5,7 @@ provider "intersight" {
 }
 
 module "terraform-intersight-iks" {
-  source = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
+  source = "terraform-cisco-modules/iks/intersight//"
   version = "1.0.1"
 
 
