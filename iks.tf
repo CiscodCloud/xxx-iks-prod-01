@@ -34,6 +34,7 @@ module "iks" {
   worker_size         = "medium"
   worker_count        = 4
   master_count        = 1
+  load_balancers      = 3
   # Organization
   organization        = var.organization
 }
