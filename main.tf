@@ -17,7 +17,7 @@ module "iks" {
   vc_password         = var.vc_password
   vc_datastore        = var.datastore
   vc_cluster          = var.vc_cluster
-  vc_resource_pool    = var.vc_resource_pool
+  vc_resource_pool    = ""
   vc_portgroup        = ["production|iks|nodes"]
 
   # IP Pool Information
