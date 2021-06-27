@@ -10,13 +10,13 @@ module "iks" {
   vc_datastore        = var.datastore
   vc_cluster          = var.vc_cluster
   vc_resource_pool    = var.vc_resource_pool
-  vc_portgroup        = ["sandpit|IST|demo"]
+  vc_portgroup        = ["production|iks|nodes"]
 
   # IP Pool Information
-  ip_starting_address = "100.64.2.150"
+  ip_starting_address = "100.64.0.200"
   ip_pool_size        = "20"
   ip_netmask          = "255.255.255.0"
-  ip_gateway          = "100.64.2.1"
+  ip_gateway          = "100.64.0.1"
   ntp_servers         = ["198.19.255.137"]
   dns_servers         = ["198.19.254.82"]
 
