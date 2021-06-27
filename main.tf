@@ -1,22 +1,11 @@
-# Intersight Provider Information
-terraform {
-  required_providers {
-    intersight = {
-      source = "CiscoDevNet/intersight"
-      version = "1.0.11"
-    }
-  }
-}
-
 provider "intersight" {
   apikey    = var.apikey
   secretkey = var.secretkey
   endpoint  = var.endpoint
 }
 
-
-module "iks" {
-  source  = "terraform-cisco-modules/iks/intersight"
+module "terraform-intersight-iks" {
+  source = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
   version = "1.0.1"
 
 
