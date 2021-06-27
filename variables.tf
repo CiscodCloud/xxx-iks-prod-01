@@ -49,5 +49,3 @@ variable "datastore" {
   type = string
   description = "VMware Datastore"
 }
-
-

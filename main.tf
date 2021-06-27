@@ -1,13 +1,4 @@
-terraform {
-  required_version = ">=0.15.0"
 
-  required_providers {
-    intersight = {
-      source  = "CiscoDevNet/intersight"
-      version = ">=1.0.11"
-    }
-  }
-}
 
 provider "intersight" {
   apikey    = var.api_key
@@ -17,13 +8,11 @@ provider "intersight" {
 
 module "terraform-intersight-iks" {
   source = "terraform-cisco-modules/iks/intersight//"
-  version = "1.0.1"
-
 
 
   # Infra Config Policy Information
   cluster_name        = var.cluster_name
-  cluster_action      = "Deploy"
+  # cluster_action      = "Deploy"
   vc_target_name      = var.vc_target_name
   vc_password         = var.vc_password
   vc_datastore        = var.datastore
