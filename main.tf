@@ -11,7 +11,7 @@ module "terraform-intersight-iks" {
 
   # Infra Config Policy Information
   cluster_name        = var.cluster_name
-  # cluster_action      = "Deploy"
+  cluster_action      = "Deploy"
   vc_target_name      = var.vc_target_name
   vc_password         = var.vc_password
   vc_datastore        = var.datastore
@@ -21,10 +21,13 @@ module "terraform-intersight-iks" {
   #vc_portgroup        = ["production|iks|nodes"]
 
   # IP Pool Information
-  ip_starting_address = "100.64.0.200"
-  ip_pool_size        = "20"
+  ip_starting_address = [var.ip_starting_address]
+  ip_pool_size        = [var.ip_pool_size]
+  #ip_starting_address = "100.64.0.200"
+  #ip_pool_size        = "20"
   ip_netmask          = "255.255.255.0"
-  ip_gateway          = "100.64.0.1"
+  #ip_gateway          = "100.64.0.1"
+  ip_gateway          = [var.ip_gateway]]
   ntp_servers         = ["198.19.255.137"]
   dns_servers         = ["198.19.254.82"]
 

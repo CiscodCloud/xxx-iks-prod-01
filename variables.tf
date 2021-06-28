@@ -51,3 +51,18 @@ variable "datastore" {
   type = string
   description = "VMware Datastore"
 }
+
+variable "ip_starting_address" {
+  type = string
+  description = "VMware Port Group"
+}
+
+variable "ip_pool_size" {
+  type = string
+  description = "VMware Port Group"
+}
+
+variable "ip_gateway" {
+  type = string
+  description = "VMware Port Group"
+}
