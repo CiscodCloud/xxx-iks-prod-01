@@ -25,7 +25,9 @@ module "terraform-intersight-iks" {
   ip_netmask          = "255.255.255.0"
   ip_gateway          = "100.64.0.1"
   ntp_servers         = ["198.19.255.137"]
-  dns_servers         = ["198.19.254.82"]
+  #dns_servers         = ["198.19.254.82"]
+  primary_dns         = "198.19.254.82"
+  secondary_dns       = "198.19.255.137"
 
 
   addons_list = [{
@@ -61,6 +63,6 @@ module "terraform-intersight-iks" {
   master_count        = 1
   load_balancers      = 3
   # Organization
-  #organization        = var.organization
+  organization        = var.organization
 
 }
