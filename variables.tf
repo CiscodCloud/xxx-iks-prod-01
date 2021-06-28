@@ -13,11 +13,11 @@ variable "endpoint" {
   default = "default"
 }
 
-#variable "organization" {
-#  type = string
-#  description = "Organization Name"
-#  default = "default"
-#}
+variable "organization" {
+  type = string
+  description = "Organization Name"
+  default = "default"
+}
 
 variable "ssh_key" {
   type = string
