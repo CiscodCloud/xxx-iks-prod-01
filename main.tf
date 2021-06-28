@@ -6,6 +6,7 @@ provider "intersight" {
 
 module "terraform-intersight-iks" {
   source = "terraform-cisco-modules/iks/intersight"
+  version = "1.0.1"
 
 
   # Infra Config Policy Information
@@ -61,4 +62,5 @@ module "terraform-intersight-iks" {
   load_balancers      = 3
   # Organization
   organization        = var.organization
+
 }
