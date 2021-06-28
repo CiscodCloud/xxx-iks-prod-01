@@ -17,8 +17,8 @@ module "terraform-intersight-iks" {
   vc_datastore        = var.datastore
   vc_cluster          = var.vc_cluster
   vc_resource_pool    = ""
-  vc_portgroup        = var.port_group
-  #vc_portgroup        = ["production|iks|nodes"]
+  #vc_portgroup        = var.port_group
+  vc_portgroup        = ["production|iks|nodes"]
 
   # IP Pool Information
   ip_starting_address = "100.64.0.200"

@@ -8,9 +8,9 @@ variable "secretkey" {
 }
 
 variable "endpoint" {
-  type = string
-  description = "endpoint Name"
-  default = "default"
+  type        = string
+  description = "API Endpoint URL"
+  default     = "https://www.intersight.com"
 }
 
 variable "organization" {
@@ -39,7 +39,6 @@ variable "vc_target_name" {
   description = "Target vCenter"
 }
 
-
 variable "vc_cluster" {
   type = string
   description = "VMware Cluster"
@@ -48,9 +47,4 @@ variable "vc_cluster" {
 variable "datastore" {
   type = string
   description = "VMware Datastore"
-}
-
-variable "port_group" {
-  type = string
-  description = "VMware Port Group"
 }
