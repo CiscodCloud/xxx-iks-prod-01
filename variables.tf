@@ -49,3 +49,8 @@ variable "datastore" {
   type = string
   description = "VMware Datastore"
 }
+
+variable "port_group" {
+  type = string
+  description = "VMware Port Group"
+}
