@@ -43,7 +43,10 @@ variable "vc_cluster" {
   type = string
   description = "VMware Cluster"
 }
-
+variable "vc_portgroup" {
+  type = string
+  description = "VMware Port Group"
+}
 variable "datastore" {
   type = string
   description = "VMware Datastore"
