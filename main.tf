@@ -11,7 +11,7 @@ module "terraform-intersight-iks" {
 
   # Infra Config Policy Information
   cluster_name        = var.cluster_name
-  cluster_action      = "Deploy"
+  cluster_action      = "False"
   vc_target_name      = var.vc_target_name
   vc_password         = var.vc_password
   vc_datastore        = var.datastore
